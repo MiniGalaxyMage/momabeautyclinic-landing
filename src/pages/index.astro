@@ -18,8 +18,9 @@ import Layout from '../layouts/Layout.astro';
 
       <ul class="nav-links" id="navLinks" role="list">
         <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#equipo">Equipo</a></li>
-        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
 
@@ -28,21 +29,14 @@ import Layout from '../layouts/Layout.astro';
   </nav>
 
   <!-- ============================
-       HERO
+       HERO V2 — Gradient Mesh
   ============================= -->
-  <section class="hero" aria-label="Sección principal">
-    <div class="hero-image-area">
-      <img
-        src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&q=80&auto=format&fit=crop"
-        alt="Tratamiento de medicina estética en MŌMA Beauty Clinic"
-        loading="eager"
-        decoding="sync"
-        width="900"
-        height="1200"
-      />
-    </div>
+  <section class="hero-v2" aria-label="Sección principal">
+    <div class="mesh-blob mesh-blob-1" aria-hidden="true"></div>
+    <div class="mesh-blob mesh-blob-2" aria-hidden="true"></div>
+    <div class="mesh-blob mesh-blob-3" aria-hidden="true"></div>
 
-    <div class="hero-inner">
+    <div class="hero-v2-inner">
       <div class="hero-badge reveal">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
@@ -50,110 +44,477 @@ import Layout from '../layouts/Layout.astro';
         Ciudad Real · Medicina Estética Premium
       </div>
 
-      <h1 class="hero-title reveal reveal-delay-1">
-        Medicina y Estética Avanzada en Ciudad Real
+      <h1 class="hero-v2-title reveal reveal-delay-1">
+        Medicina y Estética<br />
+        <span class="text-gradient">Avanzada en Ciudad Real</span>
       </h1>
 
-      <p class="hero-subtitle reveal reveal-delay-2">
-        Resultados reales, elevando tu confianza. Tu mejor versión empieza con un diagnóstico personalizado.
+      <p class="hero-v2-subtitle reveal reveal-delay-2">
+        Resultados reales, elevando tu confianza. Tu mejor versión empieza
+        con un diagnóstico personalizado.
       </p>
 
-      <p class="hero-location reveal reveal-delay-2">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-        </svg>
-        Calle Cruz 2, Ciudad Real
-      </p>
-
-      <div class="hero-ctas reveal reveal-delay-3">
-        <a href="#contacto" class="btn-primary">Reserva tu Consulta Gratuita</a>
-        <a href="tel:+34614343492" class="btn-outline">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:inline;margin-right:0.25rem">
+      <div class="hero-v2-ctas reveal reveal-delay-3">
+        <a href="#contacto" class="btn-primary btn-lg">Reserva tu Consulta Gratuita</a>
+        <a href="tel:+34614343492" class="btn-outline btn-lg">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:inline;margin-right:0.25rem">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.1 6.1l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
           </svg>
           614 34 34 92
         </a>
       </div>
+
+      <div class="hero-v2-meta reveal reveal-delay-4">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        Calle Cruz 2, Ciudad Real
+        <span aria-hidden="true">·</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+        </svg>
+        L-V 10:00–20:00 · S 10:00–14:00
+      </div>
     </div>
   </section>
 
   <!-- ============================
-       SERVICIOS
+       SOCIAL PROOF — Counters
   ============================= -->
-  <section id="servicios" aria-labelledby="servicios-title">
+  <section class="social-proof" aria-label="Cifras destacadas">
+    <div class="proof-inner">
+      <div class="proof-item reveal">
+        <span class="counter" data-target="2000" data-prefix="+" data-suffix="">+2000</span>
+        <span class="proof-label">Clientes satisfechos</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-item reveal reveal-delay-1">
+        <span class="counter" data-target="132" data-prefix="" data-suffix="">132</span>
+        <span class="proof-label">Publicaciones</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-item reveal reveal-delay-2">
+        <span class="proof-number">✓</span>
+        <span class="proof-label">Cuenta Verificada</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-item reveal reveal-delay-3">
+        <span class="counter" data-target="10" data-prefix="" data-suffix="+">10+</span>
+        <span class="proof-label">Años de experiencia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CATÁLOGO DE SERVICIOS — Tabs
+  ============================= -->
+  <section id="servicios" class="catalog-section" aria-labelledby="catalog-title">
     <div class="section-inner">
       <div class="section-header">
-        <span class="section-tag reveal">Tratamientos</span>
-        <h2 class="section-title reveal reveal-delay-1" id="servicios-title">Nuestros Tratamientos</h2>
-        <p class="section-subtitle reveal reveal-delay-2">Soluciones personalizadas para cada necesidad, con tecnología de última generación</p>
+        <span class="section-tag reveal">Menú MŌMA</span>
+        <h2 class="section-title reveal reveal-delay-1" id="catalog-title">Catálogo de Servicios y Precios</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Todos los tratamientos con sus precios reales. Sin sorpresas.</p>
       </div>
 
-      <div class="services-grid">
-        <!-- Medicina Estética -->
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z"/>
-            </svg>
-          </div>
-          <h3 class="service-name">Medicina Estética</h3>
-          <p class="service-desc">Ácido hialurónico, toxina botulínica e inductores de colágeno para resultados naturales y duraderos.</p>
-        </article>
+      <!-- Tab Navigation -->
+      <div class="catalog-tabs-nav reveal" role="tablist" aria-label="Categorías de servicios">
+        <button class="catalog-tab active" role="tab" id="tab-faciales" data-tab="cat-faciales" aria-selected="true" aria-controls="cat-faciales">Faciales</button>
+        <button class="catalog-tab" role="tab" id="tab-corporales" data-tab="cat-corporales" aria-selected="false" aria-controls="cat-corporales">Corporales</button>
+        <button class="catalog-tab" role="tab" id="tab-masajes" data-tab="cat-masajes" aria-selected="false" aria-controls="cat-masajes">Masajes</button>
+        <button class="catalog-tab" role="tab" id="tab-manicura" data-tab="cat-manicura" aria-selected="false" aria-controls="cat-manicura">Manicura</button>
+        <button class="catalog-tab" role="tab" id="tab-pedicura" data-tab="cat-pedicura" aria-selected="false" aria-controls="cat-pedicura">Pedicura</button>
+        <button class="catalog-tab" role="tab" id="tab-manipedi" data-tab="cat-manipedi" aria-selected="false" aria-controls="cat-manipedi">ManiPedi</button>
+        <button class="catalog-tab" role="tab" id="tab-laser" data-tab="cat-laser" aria-selected="false" aria-controls="cat-laser">Láser</button>
+        <button class="catalog-tab" role="tab" id="tab-cejas" data-tab="cat-cejas" aria-selected="false" aria-controls="cat-cejas">Cejas & Beauty</button>
+      </div>
 
-        <!-- Tratamientos Faciales -->
-        <article class="service-card reveal reveal-delay-1">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z"/>
-            </svg>
-          </div>
-          <h3 class="service-name">Tratamientos Faciales</h3>
-          <p class="service-desc">Microagujas, rejuvenecimiento facial y tratamientos anti-manchas con tecnología avanzada.</p>
-        </article>
+      <!-- Tab Panels -->
+      <div class="catalog-panels">
 
-        <!-- Tratamientos Corporales -->
-        <article class="service-card reveal reveal-delay-2">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
-            </svg>
+        <!-- ── FACIALES ── -->
+        <div class="catalog-panel active" id="cat-faciales" role="tabpanel" aria-labelledby="tab-faciales">
+          <div class="catalog-subgroup-block">
+            <h3 class="catalog-subgroup">Limpiezas</h3>
+            <div class="catalog-rows">
+              <div class="catalog-row">
+                <span class="catalog-name">Limpieza de mantenimiento</span>
+                <span class="catalog-duration">45 min</span>
+                <span class="catalog-price">32,90€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Limpieza con aparatología</span>
+                <span class="catalog-duration">60 min</span>
+                <span class="catalog-price">44,90€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Limpieza completa con Hydrafacial</span>
+                <span class="catalog-duration">75 min</span>
+                <span class="catalog-price">55€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Alta frecuencia</span>
+                <span class="catalog-duration">20 min</span>
+                <span class="catalog-price">14,90€</span>
+              </div>
+            </div>
           </div>
-          <h3 class="service-name">Tratamientos Corporales</h3>
-          <p class="service-desc">Adelgazamiento, reafirmación corporal y depilación láser para una figura estilizada.</p>
-        </article>
 
-        <!-- Labios & Rellenos -->
-        <article class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/>
-            </svg>
+          <div class="catalog-subgroup-block">
+            <h3 class="catalog-subgroup">No Invasivos</h3>
+            <div class="catalog-rows">
+              <div class="catalog-row">
+                <span class="catalog-name">Cromoterapia</span>
+                <span class="catalog-duration">30 min</span>
+                <span class="catalog-price">20€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Luz pulsada IPL</span>
+                <span class="catalog-duration">25 min</span>
+                <span class="catalog-price">35€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Cromoterapia avanzada</span>
+                <span class="catalog-duration">30 min</span>
+                <span class="catalog-price">35€</span>
+              </div>
+            </div>
           </div>
-          <h3 class="service-name">Labios & Rellenos</h3>
-          <p class="service-desc">Aumento y perfilado natural de labios. Resultados armónicos con ácido hialurónico premium.</p>
-        </article>
 
-        <!-- Micropigmentación -->
-        <article class="service-card reveal reveal-delay-1">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/>
-            </svg>
+          <div class="catalog-subgroup-block">
+            <h3 class="catalog-subgroup">Avanzados</h3>
+            <div class="catalog-rows">
+              <div class="catalog-row">
+                <span class="catalog-name">Dermapen</span>
+                <span class="catalog-duration">25 min</span>
+                <span class="catalog-price catalog-price-info">Según activos</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Plasmapen</span>
+                <span class="catalog-duration">15–30 min</span>
+                <span class="catalog-price catalog-price-info">Según zona</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Radiofrecuencia fraccionada</span>
+                <span class="catalog-duration">90 min</span>
+                <span class="catalog-price">160€</span>
+              </div>
+            </div>
           </div>
-          <h3 class="service-name">Micropigmentación</h3>
-          <p class="service-desc">Facial y capilar con Laura Meru, especialista con más de 5.000 clientes satisfechos.</p>
-        </article>
+        </div>
 
-        <!-- Nutrición -->
-        <article class="service-card reveal reveal-delay-2">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
-            </svg>
+        <!-- ── CORPORALES ── -->
+        <div class="catalog-panel" id="cat-corporales" role="tabpanel" aria-labelledby="tab-corporales">
+          <div class="catalog-subgroup-block">
+            <h3 class="catalog-subgroup">Con aparatología</h3>
+            <div class="catalog-rows">
+              <div class="catalog-row">
+                <span class="catalog-name">Vacuum</span>
+                <span class="catalog-duration">45 min</span>
+                <span class="catalog-price">34,90€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Radiofrecuencia</span>
+                <span class="catalog-duration">60 min</span>
+                <span class="catalog-price">39,90€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Cavitación</span>
+                <span class="catalog-duration">Según zona</span>
+                <span class="catalog-price catalog-price-info">Según zona</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Rayos UVA</span>
+                <span class="catalog-duration">Según FTP</span>
+                <span class="catalog-price">5,50€/ses. · Bono 10+1: 40€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Plasmapen corporal</span>
+                <span class="catalog-duration">Según zona</span>
+                <span class="catalog-price catalog-price-info">Según zona</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Presoterapia</span>
+                <span class="catalog-duration">20 min</span>
+                <span class="catalog-price catalog-price-info">Bono</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">W.O.W</span>
+                <span class="catalog-duration">20 min</span>
+                <span class="catalog-price catalog-price-info">Bono</span>
+              </div>
+            </div>
           </div>
-          <h3 class="service-name">Nutrición & Bienestar</h3>
-          <p class="service-desc">Asesoría nutricional personalizada con Irene. Equilibrio, nutrición deportiva y educación alimentaria.</p>
-        </article>
+
+          <div class="catalog-subgroup-block">
+            <h3 class="catalog-subgroup">Sin aparatología</h3>
+            <div class="catalog-rows">
+              <div class="catalog-row">
+                <span class="catalog-name">Higiene de espalda</span>
+                <span class="catalog-duration">20–30 min</span>
+                <span class="catalog-price">25€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Maderoterapia</span>
+                <span class="catalog-duration">45 min</span>
+                <span class="catalog-price">34,90€</span>
+              </div>
+              <div class="catalog-row">
+                <span class="catalog-name">Drenaje linfático manual</span>
+                <span class="catalog-duration">45 min</span>
+                <span class="catalog-price">44€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── MASAJES ── -->
+        <div class="catalog-panel" id="cat-masajes" role="tabpanel" aria-labelledby="tab-masajes">
+          <div class="catalog-rows">
+            <div class="catalog-row">
+              <span class="catalog-name">Full Body</span>
+              <span class="catalog-duration">60 min</span>
+              <span class="catalog-price">55€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Espalda</span>
+              <span class="catalog-duration">30 min</span>
+              <span class="catalog-price">35€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Craneofacial</span>
+              <span class="catalog-duration">20 min</span>
+              <span class="catalog-price">25€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Piernas</span>
+              <span class="catalog-duration">45 min</span>
+              <span class="catalog-price">40€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Pies</span>
+              <span class="catalog-duration">30 min</span>
+              <span class="catalog-price">20€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Masaje sensorial</span>
+              <span class="catalog-duration">30 min</span>
+              <span class="catalog-price">45€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Craneofacial + Presoterapia</span>
+              <span class="catalog-duration">30 min</span>
+              <span class="catalog-price">45€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Masaje parejas (pack champagne)</span>
+              <span class="catalog-duration">—</span>
+              <span class="catalog-price">120€</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── MANICURA ── -->
+        <div class="catalog-panel" id="cat-manicura" role="tabpanel" aria-labelledby="tab-manicura">
+          <div class="catalog-rows">
+            <div class="catalog-row">
+              <span class="catalog-name">Manicura clásica</span>
+              <span class="catalog-duration">30 min</span>
+              <span class="catalog-price">14,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Semipermanente</span>
+              <span class="catalog-duration">45 min</span>
+              <span class="catalog-price">17,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Semipermanente con refuerzo</span>
+              <span class="catalog-duration">60 min</span>
+              <span class="catalog-price">21,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Baño de gel</span>
+              <span class="catalog-duration">75 min</span>
+              <span class="catalog-price">25€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Baño de acrílico</span>
+              <span class="catalog-duration">75 min</span>
+              <span class="catalog-price">30€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Relleno gel</span>
+              <span class="catalog-duration">60 min</span>
+              <span class="catalog-price">25€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Relleno acrílico</span>
+              <span class="catalog-duration">60 min</span>
+              <span class="catalog-price">30€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Set gel</span>
+              <span class="catalog-duration">90 min</span>
+              <span class="catalog-price">32€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Set acrílico primera puesta</span>
+              <span class="catalog-duration">90 min</span>
+              <span class="catalog-price">37,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Retirada acrílico/gel</span>
+              <span class="catalog-duration">20 min</span>
+              <span class="catalog-price">15,90€</span>
+            </div>
+          </div>
+          <div class="catalog-extras">
+            Extras: <strong>Francesa</strong> 3,50€ &nbsp;|&nbsp; <strong>Decoración básica</strong> 0,50€/uña &nbsp;|&nbsp; <strong>Decoración 3D</strong> 1€/uña
+          </div>
+        </div>
+
+        <!-- ── PEDICURA ── -->
+        <div class="catalog-panel" id="cat-pedicura" role="tabpanel" aria-labelledby="tab-pedicura">
+          <div class="catalog-rows">
+            <div class="catalog-row">
+              <span class="catalog-name">Permanente</span>
+              <span class="catalog-duration">30 min</span>
+              <span class="catalog-price">20€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Pedicura SPA + Permanente</span>
+              <span class="catalog-duration">45 min</span>
+              <span class="catalog-price">25,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Completa Especial MōMa</span>
+              <span class="catalog-duration">60 min</span>
+              <span class="catalog-price">35,50€</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── MANIPEDI ── -->
+        <div class="catalog-panel" id="cat-manipedi" role="tabpanel" aria-labelledby="tab-manipedi">
+          <div class="catalog-rows">
+            <div class="catalog-row">
+              <span class="catalog-name">Mani Pedi Tradicional</span>
+              <span class="catalog-duration">35 min</span>
+              <span class="catalog-price">25,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Mani Pedi Permanente</span>
+              <span class="catalog-duration">90 min</span>
+              <span class="catalog-price">38,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Mani Pedi Especial MōMa</span>
+              <span class="catalog-duration">105 min</span>
+              <span class="catalog-price">48,50€</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── DEPILACIÓN LÁSER ── -->
+        <div class="catalog-panel" id="cat-laser" role="tabpanel" aria-labelledby="tab-laser">
+          <p class="catalog-laser-intro">Láser indoloro, apto para todos los fototipos de piel.</p>
+          <div class="catalog-subgroup-block">
+            <h3 class="catalog-subgroup">Zona Pequeña</h3>
+            <p class="catalog-laser-zones">Labio · Mentón · Areolas · Manos · Pies · Patillas · Perianal</p>
+            <div class="catalog-rows">
+              <div class="catalog-row">
+                <span class="catalog-name">Precio por sesión</span>
+                <span class="catalog-duration">—</span>
+                <span class="catalog-price">9,90€</span>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-subgroup-block">
+            <h3 class="catalog-subgroup">Zona Mediana</h3>
+            <p class="catalog-laser-zones">Axilas · Ingles · Medias piernas · Medios brazos · Cara</p>
+            <div class="catalog-rows">
+              <div class="catalog-row">
+                <span class="catalog-name">Precio por sesión</span>
+                <span class="catalog-duration">—</span>
+                <span class="catalog-price">23,50€</span>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-subgroup-block">
+            <h3 class="catalog-subgroup">Zona Grande</h3>
+            <p class="catalog-laser-zones">Piernas completas · Brazos completos · Pecho · Hombros · Espalda · Torso</p>
+            <div class="catalog-rows">
+              <div class="catalog-row">
+                <span class="catalog-name">Precio por sesión</span>
+                <span class="catalog-duration">—</span>
+                <span class="catalog-price">35,50€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CEJAS & BEAUTY ── -->
+        <div class="catalog-panel" id="cat-cejas" role="tabpanel" aria-labelledby="tab-cejas">
+          <div class="catalog-rows">
+            <div class="catalog-row">
+              <span class="catalog-name">Depilación de cejas</span>
+              <span class="catalog-duration">—</span>
+              <span class="catalog-price">6,50€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Diseño y depilación de cejas</span>
+              <span class="catalog-duration">—</span>
+              <span class="catalog-price">12,50€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Diseño de cejas + tinte</span>
+              <span class="catalog-duration">—</span>
+              <span class="catalog-price">18,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Lifting de pestañas</span>
+              <span class="catalog-duration">45 min</span>
+              <span class="catalog-price">25€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Laminado de cejas</span>
+              <span class="catalog-duration">45 min</span>
+              <span class="catalog-price">27,90€</span>
+            </div>
+            <div class="catalog-row">
+              <span class="catalog-name">Microneedling ác. hialurónico (labios)</span>
+              <span class="catalog-duration">20 min</span>
+              <span class="catalog-price">30€</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.catalog-panels -->
+    </div>
+  </section>
+
+  <!-- ============================
+       CTA INTERMEDIO — Gradient Border
+  ============================= -->
+  <section class="cta-mid-section" aria-label="Primera consulta gratuita">
+    <div class="cta-mid-inner">
+      <div class="cta-gradient-card reveal">
+        <div class="cta-gradient-inner">
+          <span class="section-tag" style="display:inline-block;margin-bottom:0.75rem">Primera Consulta</span>
+          <h2 class="cta-mid-title">Tu Primera Consulta es Gratuita</h2>
+          <p class="cta-mid-subtitle">
+            Analizamos tu piel con tecnología avanzada y diseñamos un plan personalizado sin compromiso.
+            Ven a conocernos en Calle Cruz 2, Ciudad Real.
+          </p>
+          <div class="cta-mid-actions">
+            <a href="#contacto" class="btn-primary btn-lg">Solicitar Cita Gratuita</a>
+            <a href="https://wa.me/34614343492" class="btn-outline btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:inline;margin-right:0.25rem">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -161,7 +522,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- ============================
        SOBRE NOSOTROS
   ============================= -->
-  <section class="about-section" aria-labelledby="about-title">
+  <section class="about-section" id="nosotros" aria-labelledby="about-title">
     <div class="about-inner">
       <div>
         <span class="about-tag reveal">Quiénes Somos</span>
@@ -184,8 +545,8 @@ import Layout from '../layouts/Layout.astro';
             <span class="stat-label">Años de experiencia</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">L-V</span>
-            <span class="stat-label">10:00 – 20:00 h</span>
+            <span class="stat-number">6</span>
+            <span class="stat-label">Especialidades</span>
           </div>
         </div>
       </div>
@@ -206,7 +567,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- ============================
-       EQUIPO
+       EQUIPO — 3D Hover
   ============================= -->
   <section id="equipo" aria-labelledby="equipo-title">
     <div class="section-inner">
@@ -217,24 +578,21 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="team-grid">
-        <!-- Ana -->
-        <article class="team-card reveal">
+        <article class="team-card card-3d reveal">
           <div class="team-avatar" aria-hidden="true">A</div>
           <h3 class="team-name">Ana</h3>
           <p class="team-role">Enfermera Estética</p>
           <p class="team-bio">Especialista en medicina estética con un trato consciente y cercano. Experta en resultados naturales que potencian tu confianza sin alterar tu esencia.</p>
         </article>
 
-        <!-- Laura Meru -->
-        <article class="team-card reveal reveal-delay-1">
+        <article class="team-card card-3d reveal reveal-delay-1">
           <div class="team-avatar" aria-hidden="true">L</div>
           <h3 class="team-name">Laura Meru</h3>
           <p class="team-role">Micropigmentación</p>
           <p class="team-bio">Artista de la micropigmentación facial y capilar con más de 5.000 clientes satisfechos. Referente en Ciudad Real por su precisión y resultados naturales.</p>
         </article>
 
-        <!-- Irene -->
-        <article class="team-card reveal reveal-delay-2">
+        <article class="team-card card-3d reveal reveal-delay-2">
           <div class="team-avatar" aria-hidden="true">I</div>
           <h3 class="team-name">Irene</h3>
           <p class="team-role">Nutrición & Bienestar</p>
@@ -245,99 +603,86 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- ============================
-       RESULTADOS
+       FAQ
   ============================= -->
-  <section id="resultados" style="background: #F5F2EC;" aria-labelledby="resultados-title">
+  <section id="faq" class="faq-section" aria-labelledby="faq-title">
     <div class="section-inner">
       <div class="section-header">
-        <span class="section-tag reveal">Antes & Después</span>
-        <h2 class="section-title reveal reveal-delay-1" id="resultados-title">Resultados que Hablan por Sí Solos</h2>
-        <p class="section-subtitle reveal reveal-delay-2">Cada caso es único. Estos son algunos de nuestros tratamientos más solicitados.</p>
+        <span class="section-tag reveal">Preguntas Frecuentes</span>
+        <h2 class="section-title reveal reveal-delay-1" id="faq-title">Todo lo que Necesitas Saber</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Resolvemos tus dudas antes de tu primera visita</p>
       </div>
 
-      <div class="results-grid">
-        <!-- Labios -->
-        <article class="result-card reveal">
-          <div class="result-card-inner">
-            <div class="result-halves">
-              <div class="result-before">
-                <span class="result-label">Antes</span>
-              </div>
-              <div class="result-after">
-                <span class="result-label">Después</span>
-              </div>
-            </div>
-            <div class="result-overlay" aria-hidden="true">
-              <p class="result-treatment">Labios con Ácido Hialurónico</p>
-            </div>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>
+            ¿Cuántas sesiones necesito para ver resultados en un tratamiento facial?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Depende del tratamiento y de tu punto de partida. Para limpiezas faciales, los resultados son visibles desde la primera sesión. Los tratamientos con dermapen o radiofrecuencia suelen requerir entre 3 y 6 sesiones para resultados óptimos. En tu primera consulta gratuita diseñamos un protocolo personalizado con el número exacto que necesitas.</p>
           </div>
-          <p class="sr-only">Resultado de tratamiento de labios con ácido hialurónico en MŌMA Beauty Clinic</p>
-        </article>
+        </details>
 
-        <!-- Rinomodelación -->
-        <article class="result-card reveal reveal-delay-1">
-          <div class="result-card-inner">
-            <div class="result-halves">
-              <div class="result-before">
-                <span class="result-label">Antes</span>
-              </div>
-              <div class="result-after">
-                <span class="result-label">Después</span>
-              </div>
-            </div>
-            <div class="result-overlay" aria-hidden="true">
-              <p class="result-treatment">Rinomodelación</p>
-            </div>
+        <details class="faq-item reveal reveal-delay-1">
+          <summary>
+            ¿El láser de depilación duele? ¿Es seguro para todos los fototipos?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Nuestro láser de depilación es indoloro gracias a la tecnología de última generación que utilizamos. La sensación es mínima — muchos pacientes describen solo un ligero calor. Es seguro para todos los fototipos de piel, incluyendo pieles bronceadas o morenas. Recomendamos evitar la exposición solar 24–48h antes y después de cada sesión.</p>
           </div>
-          <p class="sr-only">Resultado de rinomodelación en MŌMA Beauty Clinic</p>
-        </article>
+        </details>
 
-        <!-- Facial -->
-        <article class="result-card reveal reveal-delay-2">
-          <div class="result-card-inner">
-            <div class="result-halves">
-              <div class="result-before">
-                <span class="result-label">Antes</span>
-              </div>
-              <div class="result-after">
-                <span class="result-label">Después</span>
-              </div>
-            </div>
-            <div class="result-overlay" aria-hidden="true">
-              <p class="result-treatment">Tratamiento Facial Avanzado</p>
-            </div>
+        <details class="faq-item reveal reveal-delay-2">
+          <summary>
+            ¿Es necesaria una consulta previa antes del tratamiento?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Sí, y además es completamente gratuita. En la primera consulta analizamos tu piel, escuchamos tus objetivos y diseñamos un protocolo personalizado. Esto nos permite garantizar que el tratamiento elegido es el más adecuado para ti y que no hay contraindicaciones. Sin compromiso de ningún tipo.</p>
           </div>
-          <p class="sr-only">Resultado de tratamiento facial avanzado en MŌMA Beauty Clinic</p>
-        </article>
+        </details>
 
-        <!-- Micropigmentación -->
-        <article class="result-card reveal reveal-delay-3">
-          <div class="result-card-inner">
-            <div class="result-halves">
-              <div class="result-before">
-                <span class="result-label">Antes</span>
-              </div>
-              <div class="result-after">
-                <span class="result-label">Después</span>
-              </div>
-            </div>
-            <div class="result-overlay" aria-hidden="true">
-              <p class="result-treatment">Micropigmentación</p>
-            </div>
+        <details class="faq-item reveal reveal-delay-3">
+          <summary>
+            ¿Puedo combinar varios tratamientos en la misma visita?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>En muchos casos sí. Por ejemplo, es habitual combinar una limpieza facial con masaje craneofacial, o manicura con pedicura. Sin embargo, algunos tratamientos necesitan tiempo de recuperación antes de combinarse. En la consulta te indicaremos qué combinaciones son posibles y cuáles conviene espaciar.</p>
           </div>
-          <p class="sr-only">Resultado de micropigmentación en MŌMA Beauty Clinic</p>
-        </article>
+        </details>
+
+        <details class="faq-item reveal reveal-delay-4">
+          <summary>
+            ¿Cuánto tiempo duran los resultados del ácido hialurónico?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Los resultados del ácido hialurónico suelen mantenerse entre 9 y 18 meses, dependiendo de la zona tratada, el tipo de producto y el metabolismo individual. Las zonas de mayor movilidad, como los labios, tienden a metabolizarse antes. Con sesiones de mantenimiento periódicas se pueden prolongar los resultados de forma natural.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal reveal-delay-5">
+          <summary>
+            ¿Cómo puedo llegar a la clínica? ¿Hay aparcamiento cerca?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Estamos en Calle Cruz 2, en el corazón de Ciudad Real. Hay varias opciones de aparcamiento en los alrededores, incluyendo el Parking Plaza Mayor a pocos minutos a pie. También somos fácilmente accesibles en transporte público. Cualquier duda, escríbenos por WhatsApp y te orientamos.</p>
+          </div>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- ============================
-       FORMULARIO
+       FORMULARIO DE CITA
   ============================= -->
   <section id="contacto" class="form-section" aria-labelledby="form-title">
     <div class="section-inner">
       <div class="form-grid">
-        <!-- Info lateral -->
         <div>
           <span class="section-tag reveal">Primera Consulta Gratuita</span>
           <h2 class="form-info-title reveal reveal-delay-1" id="form-title">Tu Primera Consulta es Gratuita</h2>
@@ -366,7 +711,6 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <!-- Formulario -->
         <div class="reveal reveal-delay-2">
           <form
             class="contact-form"
@@ -386,60 +730,41 @@ import Layout from '../layouts/Layout.astro';
             <div class="form-row">
               <div class="form-group">
                 <label for="nombre">Nombre *</label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  placeholder="Tu nombre"
-                  required
-                  autocomplete="given-name"
-                />
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="given-name" />
               </div>
               <div class="form-group">
                 <label for="telefono">Teléfono *</label>
-                <input
-                  type="tel"
-                  id="telefono"
-                  name="telefono"
-                  placeholder="6XX XXX XXX"
-                  required
-                  autocomplete="tel"
-                />
+                <input type="tel" id="telefono" name="telefono" placeholder="6XX XXX XXX" required autocomplete="tel" />
               </div>
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="tu@email.com"
-                autocomplete="email"
-              />
+              <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" />
             </div>
 
             <div class="form-group">
               <label for="servicio">Servicio de interés</label>
               <select id="servicio" name="servicio">
                 <option value="">Selecciona un tratamiento</option>
-                <option value="medicina-estetica">Medicina Estética</option>
-                <option value="tratamiento-facial">Tratamiento Facial / Microagujas</option>
-                <option value="tratamiento-corporal">Tratamiento Corporal</option>
-                <option value="labios-rellenos">Labios & Rellenos</option>
+                <option value="facial">Tratamiento Facial (Limpieza, IPL, Dermapen…)</option>
+                <option value="corporal">Tratamiento Corporal (RF, Vacuoterapia, Cavitación…)</option>
+                <option value="masaje">Masaje Relajante</option>
+                <option value="manicura">Manicura / Uñas</option>
+                <option value="pedicura">Pedicura</option>
+                <option value="manipedi">ManiPedi (pack)</option>
+                <option value="laser">Depilación Láser</option>
+                <option value="cejas">Cejas, Laminado & Beauty Touch</option>
                 <option value="micropigmentacion">Micropigmentación</option>
                 <option value="nutricion">Nutrición & Bienestar</option>
+                <option value="medicina-estetica">Medicina Estética (Ácido Hialurónico, Toxina…)</option>
                 <option value="otro">Otro / No sé aún</option>
               </select>
             </div>
 
             <div class="form-group">
               <label for="mensaje">Mensaje (opcional)</label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                placeholder="Cuéntanos qué necesitas o qué dudas tienes..."
-              ></textarea>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas o qué dudas tienes..."></textarea>
             </div>
 
             <div class="form-checkbox">
@@ -464,7 +789,6 @@ import Layout from '../layouts/Layout.astro';
   ============================= -->
   <footer aria-label="Pie de página">
     <div class="footer-inner">
-      <!-- Columna marca -->
       <div>
         <p class="footer-brand-name">MŌMA</p>
         <p class="footer-tagline">
@@ -503,7 +827,6 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
 
-      <!-- Horarios -->
       <div>
         <p class="footer-col-title">Horario</p>
         <ul class="footer-links">
@@ -515,7 +838,6 @@ import Layout from '../layouts/Layout.astro';
         </ul>
       </div>
 
-      <!-- Legal -->
       <div>
         <p class="footer-col-title">Legal</p>
         <ul class="footer-links">
@@ -554,6 +876,57 @@ import Layout from '../layouts/Layout.astro';
       </a>
     </div>
   </div>
+
+  <!-- ============================
+       SCRIPTS V2
+  ============================= -->
+  <script>
+    // Tabs catalog
+    const tabBtns = document.querySelectorAll('.catalog-tab');
+    const tabPanels = document.querySelectorAll('.catalog-panel');
+
+    tabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = (btn as HTMLElement).dataset.tab;
+        tabBtns.forEach((b) => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        tabPanels.forEach((p) => p.classList.remove('active'));
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        if (target) {
+          const panel = document.getElementById(target);
+          panel?.classList.add('active');
+        }
+      });
+    });
+
+    // Animated counters
+    const counterEls = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target as HTMLElement;
+          const target = parseInt(el.dataset.target || '0', 10);
+          const prefix = el.dataset.prefix || '';
+          const suffix = el.dataset.suffix || '';
+          let current = 0;
+          const step = Math.max(1, Math.ceil(target / 60));
+          const timer = setInterval(() => {
+            current = Math.min(current + step, target);
+            el.textContent = prefix + current.toLocaleString('es-ES') + suffix;
+            if (current >= target) clearInterval(timer);
+          }, 16);
+          counterObserver.unobserve(el);
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    counterEls.forEach((el) => counterObserver.observe(el));
+  </script>
 </Layout>
 
 <style>
