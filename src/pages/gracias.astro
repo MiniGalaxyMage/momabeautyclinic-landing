@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="¡Solicitud recibida! — MŌMA Beauty Clinic"
+  description="Tu solicitud de cita ha sido recibida. Te contactaremos en breve."
+  ogTitle="¡Solicitud recibida! — MŌMA Beauty Clinic"
+  ogDescription="Tu solicitud de cita ha sido recibida. Te contactaremos en breve."
+  canonical="https://momabeautyclinic.es/gracias"
+>
+  <nav class="navbar scrolled" role="navigation" aria-label="Navegación principal">
+    <div class="navbar-inner">
+      <a href="/" class="nav-logo" aria-label="MŌMA Beauty Clinic — Inicio">MŌMA</a>
+    </div>
+  </nav>
+
+  <main style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--color-bg);padding:2rem;">
+    <div style="text-align:center;max-width:520px;">
+      <div style="width:72px;height:72px;background:rgba(122,140,110,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7A8C6E" stroke-width="2" aria-hidden="true">
+          <path d="M20 6 9 17l-5-5"/>
+        </svg>
+      </div>
+      <h1 style="font-family:var(--font-heading);font-size:2rem;font-weight:600;color:var(--color-primary-dark);margin-bottom:0.875rem;">
+        ¡Gracias por tu solicitud!
+      </h1>
+      <p style="color:var(--color-text-muted);line-height:1.75;margin-bottom:2rem;">
+        Hemos recibido tu solicitud de cita. Nuestro equipo se pondrá en contacto contigo
+        en las próximas 24 horas en días laborables.
+      </p>
+      <p style="color:var(--color-text-muted);font-size:0.9rem;margin-bottom:2.5rem;">
+        ¿Necesitas algo urgente?
+        <a href="tel:+34614343492" style="color:var(--color-primary);font-weight:600;">Llámanos al 614 34 34 92</a>
+        o contáctanos por
+        <a href="https://wa.me/34614343492" style="color:var(--color-primary);font-weight:600;" target="_blank" rel="noopener">WhatsApp</a>.
+      </p>
+      <a href="/" class="btn-primary">Volver al inicio</a>
+    </div>
+  </main>
+</Layout>

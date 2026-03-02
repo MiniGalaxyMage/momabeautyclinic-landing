@@ -1,0 +1,59 @@
+---
+const results = [
+  { treatment: "Labios con Ácido Hialurónico", gradient: "linear-gradient(135deg,#D4CFC8,#C0B8AF)" },
+  { treatment: "Rinomodelación", gradient: "linear-gradient(135deg,#CCCEC6,#B8BAB0)" },
+  { treatment: "Tratamiento Facial Rejuvenecedor", gradient: "linear-gradient(135deg,#D8D4CC,#C8C4BC)" },
+  { treatment: "Micropigmentación Labial", gradient: "linear-gradient(135deg,#C8C4BC,#B8B4AC)" },
+  { treatment: "Toxina Botulínica", gradient: "linear-gradient(135deg,#D0CEC8,#C0BCBA)" },
+  { treatment: "Inductores de Colágeno", gradient: "linear-gradient(135deg,#DCDAD4,#CCCAC4)" },
+];
+---
+<section id="resultados" style="padding:5rem 0; background:var(--color-bg);">
+  <div class="section-inner">
+    <!-- Header -->
+    <div class="section-header reveal">
+      <span class="section-tag">Antes &amp; Después</span>
+      <h2 class="section-title">Resultados que Hablan por Sí Solos</h2>
+      <p class="section-subtitle">
+        Cada tratamiento es único. Resultados reales de pacientes reales en MŌMA Beauty Clinic.
+      </p>
+    </div>
+
+    <!-- Results grid -->
+    <div class="results-grid">
+      {results.map((r, i) => (
+        <div class={`result-card reveal reveal-delay-${(i % 3) + 1}`} style={`background:${r.gradient};`}>
+          <div class="result-card-inner">
+            <div class="result-halves">
+              <div class="result-before">
+                <span class="result-label">Antes</span>
+              </div>
+              <div class="result-after">
+                <span class="result-label">Después</span>
+              </div>
+            </div>
+            <!-- Hover overlay -->
+            <div class="result-overlay">
+              <span class="result-treatment">{r.treatment}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA below -->
+    <div style="text-align:center; margin-top:3rem;" class="reveal">
+      <p style="color:var(--color-text-muted); margin-bottom:1.25rem; font-size:0.95rem;">
+        ¿Quieres ver más resultados? Síguenos en Instagram
+      </p>
+      <a
+        href="https://www.instagram.com/momabeautyclinic"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-outline"
+      >
+        @momabeautyclinic
+      </a>
+    </div>
+  </div>
+</section>

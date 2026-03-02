@@ -1,0 +1,51 @@
+---
+const stats = [
+  { number: "10+", label: "Años de experiencia" },
+  { number: "2000+", label: "Pacientes satisfechos" },
+  { number: "Ciudad Real", label: "Calle Cruz 2" },
+];
+---
+<section class="about-section" id="nosotros">
+  <div class="about-inner">
+    <!-- Text column -->
+    <div>
+      <span class="about-tag reveal">Sobre Nosotros</span>
+      <h2 class="about-title reveal reveal-delay-1">Tu mejor versión empieza aquí</h2>
+      <p class="about-text reveal reveal-delay-2">
+        En MŌMA creemos en la belleza 360°: entendemos cada paciente de dentro hacia fuera.
+        Nuestro equipo multidisciplinar combina medicina estética avanzada, micropigmentación experta
+        y nutrición personalizada para conseguir resultados naturales y duraderos.
+      </p>
+      <p class="about-text reveal reveal-delay-3" style="margin-top:1rem;">
+        Cada tratamiento está diseñado de manera personalizada, respetando tus rasgos únicos
+        y potenciando tu confianza natural. Porque la mejor estética es aquella que simplemente
+        te hace sentir tú misma.
+      </p>
+
+      <!-- Stats -->
+      <div class="stats-grid reveal reveal-delay-4">
+        {stats.map((stat) => (
+          <div class="stat-item">
+            <span class="stat-number">{stat.number}</span>
+            <span class="stat-label">{stat.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Visual column -->
+    <div class="about-visual reveal reveal-delay-2">
+      <div class="about-img-placeholder">
+        <!-- Decorative botanical SVG -->
+        <svg width="160" height="200" viewBox="0 0 160 200" fill="none" aria-hidden="true">
+          <ellipse cx="80" cy="100" rx="55" ry="85" fill="rgba(255,255,255,0.04)" stroke="rgba(196,185,154,0.3)" stroke-width="1"/>
+          <path d="M80 180 C80 180 40 140 40 100 C40 60 80 20 80 20 C80 20 120 60 120 100 C120 140 80 180 80 180Z" fill="rgba(122,140,110,0.18)"/>
+          <path d="M80 160 C80 160 55 130 55 100 C55 70 80 40 80 40 C80 40 105 70 105 100 C105 130 80 160 80 160Z" fill="rgba(122,140,110,0.25)"/>
+          <circle cx="80" cy="100" r="18" fill="rgba(196,185,154,0.3)" stroke="rgba(196,185,154,0.5)" stroke-width="1"/>
+          <text x="80" y="106" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-weight="600" fill="rgba(255,255,255,0.6)">MŌMA</text>
+        </svg>
+        <span style="position:relative;z-index:1;font-family:var(--font-heading);font-size:0.9rem;letter-spacing:0.1em;text-transform:uppercase;">Botanical Luxury</span>
+      </div>
+    </div>
+  </div>
+</section>
