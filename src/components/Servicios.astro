@@ -1,0 +1,57 @@
+---
+const services = [
+  {
+    name: "Medicina Estética",
+    desc: "Ácido hialurónico, toxina botulínica e inductores de colágeno para resultados naturales y duraderos.",
+    icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+  },
+  {
+    name: "Tratamientos Faciales",
+    desc: "Microagujas, rejuvenecimiento y tratamientos anti-manchas para una piel luminosa y revitalizada.",
+    icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z"/></svg>`,
+  },
+  {
+    name: "Tratamientos Corporales",
+    desc: "Adelgazamiento localizado, reafirmación de tejidos y depilación láser de última generación.",
+    icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>`,
+  },
+  {
+    name: "Labios & Rellenos",
+    desc: "Aumento y perfilado natural de labios con ácido hialurónico. Resultados inmediatos y naturales.",
+    icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`,
+  },
+  {
+    name: "Micropigmentación",
+    desc: "Facial y capilar con Laura Meru, especialista con más de 5.000 clientes satisfechos.",
+    icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>`,
+  },
+  {
+    name: "Nutrición & Bienestar",
+    desc: "Asesoría nutricional personalizada con Irene. Equilibrio, nutrición deportiva y educación alimentaria.",
+    icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2l1.578 6.647A4 4 0 008.5 12H12m0 0v9m0-9h3.5a4 4 0 003.922-3.353L21 2"/><path d="M12 12c0-2.5-2-4-2-4"/></svg>`,
+  },
+];
+---
+<section id="servicios" class="bg-[#FAF7F2]" style="padding:5rem 0;">
+  <div class="section-inner">
+    <!-- Header -->
+    <div class="section-header reveal">
+      <span class="section-tag">Tratamientos</span>
+      <h2 class="section-title">Nuestros Tratamientos</h2>
+      <p class="section-subtitle">
+        Un enfoque 360° para tu bienestar. Desde medicina estética avanzada hasta nutrición personalizada.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="services-grid">
+      {services.map((s, i) => (
+        <article class={`service-card reveal reveal-delay-${(i % 3) + 1}`}>
+          <div class="service-icon" aria-hidden="true" set:html={s.icon} />
+          <h3 class="service-name">{s.name}</h3>
+          <p class="service-desc">{s.desc}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

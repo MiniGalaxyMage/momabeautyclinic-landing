@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "landing-completa-moma",
+    "title": "Implementar landing completa MŌMA Beauty Clinic",
+    "status": "done",
+    "pr": 1,
+    "pr_url": "https://github.com/MiniGalaxyMage/momabeautyclinic-landing/pull/1",
+    "branch": "feat/landing-completa",
+    "completed_at": "2026-03-02"
+  }
+]

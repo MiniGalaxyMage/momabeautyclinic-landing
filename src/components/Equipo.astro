@@ -1,0 +1,46 @@
+---
+const team = [
+  {
+    initial: "A",
+    name: "Ana",
+    role: "Enfermera Estética",
+    bio: "Especialista en medicina estética con un trato consciente y cercano. Su enfoque natural garantiza resultados que realzan tu belleza sin perder tu esencia.",
+  },
+  {
+    initial: "LM",
+    name: "Laura Meru",
+    role: "Micropigmentación",
+    bio: "Especialista en micropigmentación facial y capilar con más de 5.000 clientes satisfechos. Precisión y naturalidad en cada trazo.",
+  },
+  {
+    initial: "I",
+    name: "Irene",
+    role: "Nutricionista",
+    bio: "Experta en nutrición deportiva y educación alimentaria. Su enfoque integral equilibra cuerpo y mente para alcanzar tu mejor versión desde adentro.",
+  },
+];
+---
+<section id="equipo" style="padding:5rem 0; background:var(--color-surface);">
+  <div class="section-inner">
+    <!-- Header -->
+    <div class="section-header reveal">
+      <span class="section-tag">Nuestro Equipo</span>
+      <h2 class="section-title">Profesionales a Tu Servicio</h2>
+      <p class="section-subtitle">
+        Un equipo multidisciplinar comprometido con tu bienestar y con resultados naturales y duraderos.
+      </p>
+    </div>
+
+    <!-- Team grid -->
+    <div class="team-grid">
+      {team.map((member, i) => (
+        <article class={`team-card reveal reveal-delay-${i + 1}`}>
+          <div class="team-avatar" aria-hidden="true">{member.initial}</div>
+          <h3 class="team-name">{member.name}</h3>
+          <p class="team-role">{member.role}</p>
+          <p class="team-bio">{member.bio}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
